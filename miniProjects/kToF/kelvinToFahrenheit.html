@@ -1,11 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stack Skills Mini Projects</title>
+    <title>Kelvin to fahrenheit</title>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <script src="kelvin.js"></script>
 </head>
+
 <body>
-    
+    <form class="form-inline">
+        <div class="form-group mb-2">
+            <label for="staticTemp2" class="sr-only">Temp</label>
+            <input type="text" readonly class="form-control-plaintext" id="staticTemp2" value="Temperature in Kelvin">
+          </div>
+        <div class="form-group mx-sm-3 mb-2">
+            <label for="input2" class="sr-only">Temperature in Kelvin</label>
+            <input type="number" value="" class="form-control" id="tempInput" placeholder="Temperature">
+        </div>
+        <button onclick="runTemp()" type="submit" class="btn btn-primary mb-2">Submit</button>
+    </form>
 </body>
+
 </html>
